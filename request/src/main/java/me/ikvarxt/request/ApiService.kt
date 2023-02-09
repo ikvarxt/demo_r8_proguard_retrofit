@@ -31,6 +31,7 @@ private val client = OkHttpClient.Builder()
         val builder = request.newBuilder()
         val url = request.url()
 
+        // to check out the real request url
         Log.d("TAG", "interceptor url: $url")
 
         chain.proceed(builder.build())
